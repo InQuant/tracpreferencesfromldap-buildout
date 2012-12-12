@@ -8,8 +8,8 @@ render_unsafe_content = false
 color_scale = True
 downloadable_paths = /trunk, /branches/*, /tags/*
 hide_properties = svk:merge
-intermediate_color = 
-intermediate_point = 
+intermediate_color =
+intermediate_point =
 newest_color = (255, 136, 136)
 oldest_color = (136, 136, 255)
 oneliner_properties = trac:summary
@@ -33,13 +33,13 @@ tracpreferencesfromldap.* = enabled
 [header_logo]
 alt = (please configure the [header_logo] section in trac.ini)
 height = -1
-link = 
+link =
 src = ${trac_ini:logo}
 width = -1
 
 [inherit]
-plugins_dir = 
-templates_dir = 
+plugins_dir =
+templates_dir =
 
 [logging]
 log_file = trac.log
@@ -59,36 +59,36 @@ php_path = php
 tab_width = 8
 
 [notification]
-admit_domains = 
+admit_domains =
 always_notify_owner = false
 always_notify_reporter = false
 always_notify_updater = true
-ignore_domains = 
+ignore_domains =
 mime_encoding = base64
-smtp_always_bcc = 
-smtp_always_cc = 
-smtp_default_domain = 
+smtp_always_bcc =
+smtp_always_cc =
+smtp_default_domain =
 smtp_enabled = false
 smtp_from = trac@localhost
-smtp_from_name = 
-smtp_password = 
+smtp_from_name =
+smtp_password =
 smtp_port = 25
 smtp_replyto = trac@localhost
 smtp_server = localhost
 smtp_subject_prefix = __default__
-smtp_user = 
+smtp_user =
 ticket_subject_template = $prefix #$ticket.id: $summary
 use_public_cc = false
 use_short_addr = false
 use_tls = false
 
 [project]
-admin = 
+admin =
 descr = My example project
 footer = Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a>
 icon = common/trac.ico
 name = trac
-url = 
+url =
 
 [query]
 default_anonymous_query = status!=closed&cc~=$USER
@@ -113,12 +113,12 @@ branches = trunk,branches/*
 tags = tags/*
 
 [ticket]
-default_component = 
-default_milestone = 
+default_component =
+default_milestone =
 default_priority = major
 default_resolution = fixed
 default_type = defect
-default_version = 
+default_version =
 max_description_size = 262144
 preserve_newlines = default
 restrict_owner = false
@@ -152,14 +152,14 @@ newticket_formatter = oneliner
 ticket_show_details = false
 
 [trac]
-authz_file = 
-authz_module_name = 
+authz_file =
+authz_module_name =
 auto_reload = False
-base_url = 
+base_url =
 check_auth_ip = true
 database = sqlite:db/trac.db
 default_charset = iso-8859-15
-htdocs_location = 
+htdocs_location =
 ignore_auth_case = false
 mainnav = wiki,timeline,roadmap,browser,tickets,newticket,search
 metanav = login,logout,prefs,help,about
@@ -179,3 +179,7 @@ server_hostname = ${trac_ini:host}
 server_port = ${trac_ini:port}
 manager = ${trac_ini:manager}
 manager_pwd = ${trac_ini:manager_pwd}
+root_dn = ${trac_ini:root_dn}
+cn = ${trac_ini:cn}
+o = ${trac_ini:o}
+dn = ${trac_ini:dn}
