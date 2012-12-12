@@ -180,6 +180,3 @@ server_port = ${trac_ini:port}
 manager = ${trac_ini:manager}
 manager_pwd = ${trac_ini:manager_pwd}
 root_dn = ${trac_ini:root_dn}
-cn = ${trac_ini:cn}
-o = ${trac_ini:o}
-dn = ${trac_ini:dn}
